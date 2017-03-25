@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
    if($sub['extention'] == 'srt'){
       function transform($time){//if($GLOBALS['aaf']++<5){echo "'".$time."'<hr />";}
          $format = $GLOBALS['sub']['timeform_format'];
-         sscanf($time,$format, $hours, $minutes, $seconds, $miliseconds);
+         sscanf($time, $format, $hours, $minutes, $seconds, $miliseconds);
 
          switch($GLOBALS['sub']['shift_period_type']){
             case "hours"      : case "0":
